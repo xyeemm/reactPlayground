@@ -17,9 +17,9 @@ const Form = () => {
 		message: z.string().min(10).max(500),
 		address: z.object({
 			formattedAddress: z.string().min(2).max(100),
-			city: z.string().min(2).max(100).optional(),
+			city: z.string().max(100).optional(),
 			country: z.string().min(2).max(100).optional(),
-			postalCode: z.string().min(2).max(100).optional(),
+			postalCode: z.string().max(100).optional(),
 			lat: z.number().min(-90).max(90).optional(),
 			lng: z.number().min(-180).max(180).optional(),
 		}),

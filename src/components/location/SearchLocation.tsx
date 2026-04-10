@@ -43,23 +43,3 @@ export const PlaceAutocomplete = ({
 
 	return <Input ref={inputRef} placeholder='Search address...' />
 }
-
-// Main App
-// const Mapstest = () => {
-//   const [selectedPlace, setSelectedPlace] = useState<any>(null);
-
-//   return (
-//     <APIProvider apiKey="AIzaSyDuUw9V5xqRwATLdYvBz2EK6Dy5LTJ4N4I">
-//       <PlaceAutocomplete onPlaceSelect={setSelectedPlace} />
-
-//       {selectedPlace && (
-//         <div>
-//           <p>{selectedPlace.name}</p>
-//           <p>{selectedPlace.address}</p>
-//           <p>{selectedPlace.lat}, {selectedPlace.lng}</p>
-//         </div>
-//       )}
-//     </APIProvider>
-//   );
-// };
-// export default Mapstest;
